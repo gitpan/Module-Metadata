@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               Module-Metadata
-version:            1.000000
+version:            1.000001
 abstract:           Gather package and POD information from perl module files
 author:
     - Ken Williams <kwilliams@cpan.org>, Randy W. Sims <RandyS@ThePierianSpring.org>
