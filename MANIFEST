@@ -5,9 +5,13 @@ maint/Makefile.include
 maint/Makefile.PL.include
 Makefile.PL
 MANIFEST			This list of files
+t/lib/0.1/Foo.pm
+t/lib/0.2/Foo.pm
 t/lib/DistGen.pm
 t/lib/MBTest.pm
 t/lib/Tie/CPHash.pm
 t/metadata.t
+t/version.t
 xt/pod.t
-META.yml                                 Module meta-data (added by MakeMaker)
+META.yml                                 Module YAML meta-data (added by MakeMaker)
+META.json                                Module JSON meta-data (added by MakeMaker)
