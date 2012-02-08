@@ -18,5 +18,12 @@ no_index:
     - t
     - inc
 requires:
+  Carp: 0
+  File::Find: 0
+  File::Spec: 0
+  IO::File: 0
+  strict: 0
+  vars: 0
   version: 0.87
-version: 1.000008
+  warnings: 0
+version: 1.000009
