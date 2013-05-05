@@ -3,8 +3,8 @@
    "author" : [
       "Ken Williams <kwilliams@cpan.org>, Randy W. Sims <RandyS@ThePierianSpring.org>"
    ],
-   "dynamic_config" : 1,
-   "generated_by" : "ExtUtils::MakeMaker version 6.6302, CPAN::Meta::Converter version 2.120921",
+   "dynamic_config" : 0,
+   "generated_by" : "ExtUtils::MakeMaker version 6.66, CPAN::Meta::Converter version 2.130880",
    "license" : [
       "perl_5"
    ],
@@ -44,5 +44,11 @@
       }
    },
    "release_status" : "stable",
-   "version" : "1.000011"
+   "resources" : {
+      "homepage" : "http://git.shadowcat.co.uk/gitweb/gitweb.cgi?p=p5sagit/Module-Metadata.git",
+      "repository" : {
+         "url" : "git://git.shadowcat.co.uk/p5sagit/Module-Metadata.git"
+      }
+   },
+   "version" : "1.000012"
 }
