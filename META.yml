@@ -29,4 +29,4 @@ requires:
 resources:
   homepage: http://git.shadowcat.co.uk/gitweb/gitweb.cgi?p=p5sagit/Module-Metadata.git
   repository: git://git.shadowcat.co.uk/p5sagit/Module-Metadata.git
-version: 1.000012
+version: 1.000013

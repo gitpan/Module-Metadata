@@ -18,6 +18,10 @@ WriteMakefile(
     'vars'        => 0,
     'version'     => 0.87,
     'warnings'    => 0,
+    $] < 5.008
+      ? ( 'IO::Scalar' => 0 )
+      : ()
+    ,
   },
   META_MERGE => {
     dynamic_config => 0,
@@ -27,4 +31,6 @@ WriteMakefile(
       homepage => 'http://git.shadowcat.co.uk/gitweb/gitweb.cgi?p=p5sagit/Module-Metadata.git',
     },
   },
+
+  INSTALLDIRS => ($] < 5.011 ? 'perl' : 'site'),
 );
