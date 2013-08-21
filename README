@@ -16,7 +16,9 @@ SYNOPSIS
 
 DESCRIPTION
     This module provides a standard way to gather metadata about a .pm file
-    without executing unsafe code.
+    through (mostly) static analysis and (some) code execution. When
+    determining the version of a module, the $VERSION assignment is
+    "eval"ed, as is traditional in the CPAN toolchain.
 
 USAGE
   Class methods
