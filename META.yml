@@ -2,9 +2,10 @@
 abstract: 'Gather package and POD information from perl module files'
 author:
   - 'Ken Williams <kwilliams@cpan.org>, Randy W. Sims <RandyS@ThePierianSpring.org>'
-build_requires: {}
+build_requires:
+  ExtUtils::MakeMaker: 0
 dynamic_config: 0
-generated_by: 'ExtUtils::MakeMaker version 6.66, CPAN::Meta::Converter version 2.120921'
+generated_by: 'ExtUtils::MakeMaker version 6.72, CPAN::Meta::Converter version 2.132140'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -14,6 +15,15 @@ no_index:
   directory:
     - t
     - inc
+requires:
+  Carp: 0
+  File::Find: 0
+  File::Spec: 0
+  IO::File: 0
+  strict: 0
+  vars: 0
+  version: 0.87
+  warnings: 0
 resources:
   homepage: http://git.shadowcat.co.uk/gitweb/gitweb.cgi?p=p5sagit/Module-Metadata.git
-version: 1.000015
+version: 1.000016
