@@ -5,7 +5,7 @@ author:
 build_requires:
   ExtUtils::MakeMaker: 0
 dynamic_config: 0
-generated_by: 'ExtUtils::MakeMaker version 6.72, CPAN::Meta::Converter version 2.132140'
+generated_by: 'ExtUtils::MakeMaker version 6.76, CPAN::Meta::Converter version 2.120921'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -20,10 +20,12 @@ requires:
   File::Find: 0
   File::Spec: 0
   IO::File: 0
+  perl: 5.006
   strict: 0
   vars: 0
   version: 0.87
   warnings: 0
 resources:
-  homepage: http://git.shadowcat.co.uk/gitweb/gitweb.cgi?p=p5sagit/Module-Metadata.git
-version: 1.000016
+  bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=Module-Metadata
+  repository: git://git.shadowcat.co.uk/p5sagit/Module-Metadata.git
+version: 1.000017

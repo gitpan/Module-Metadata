@@ -4,7 +4,7 @@
       "Ken Williams <kwilliams@cpan.org>, Randy W. Sims <RandyS@ThePierianSpring.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "ExtUtils::MakeMaker version 6.72, CPAN::Meta::Converter version 2.132140",
+   "generated_by" : "ExtUtils::MakeMaker version 6.76, CPAN::Meta::Converter version 2.120921",
    "license" : [
       "perl_5"
    ],
@@ -31,6 +31,7 @@
             "File::Find" : "0",
             "File::Spec" : "0",
             "IO::File" : "0",
+            "perl" : "5.006",
             "strict" : "0",
             "vars" : "0",
             "version" : "0.87",
@@ -40,7 +41,15 @@
    },
    "release_status" : "stable",
    "resources" : {
-      "homepage" : "http://git.shadowcat.co.uk/gitweb/gitweb.cgi?p=p5sagit/Module-Metadata.git"
+      "bugtracker" : {
+         "mailto" : "bug-Module-Metadata@rt.cpan.org",
+         "web" : "https://rt.cpan.org/Public/Dist/Display.html?Name=Module-Metadata"
+      },
+      "repository" : {
+         "type" : "git",
+         "url" : "git://git.shadowcat.co.uk/p5sagit/Module-Metadata.git",
+         "web" : "http://git.shadowcat.co.uk/gitweb/gitweb.cgi?p=p5sagit/Module-Metadata.git"
+      }
    },
-   "version" : "1.000016"
+   "version" : "1.000017"
 }

@@ -18,6 +18,7 @@ t/lib/ENDPOD.pm
 t/lib/MBTest.pm
 t/lib/Tie/CPHash.pm
 t/metadata.t
+t/taint.t
 t/version.t
 xt/pod.t
 META.yml                                 Module YAML meta-data (added by MakeMaker)
