@@ -1,5 +1,9 @@
 Release history for Module-Metadata
 
+1.000019   2013-10-06
+  - warnings now disabled inside during the evaluation of generated version
+    sub (BinGOs, RT#89282)
+
 1.000018   2013-09-11
   - re-release of detainting fix without unstated non-core test dependencies
 
