@@ -3,8 +3,8 @@
    "author" : [
       "Ken Williams <kwilliams@cpan.org>, Randy W. Sims <RandyS@ThePierianSpring.org>"
    ],
-   "dynamic_config" : 0,
-   "generated_by" : "ExtUtils::MakeMaker version 6.78, CPAN::Meta::Converter version 2.132620",
+   "dynamic_config" : 1,
+   "generated_by" : "ExtUtils::MakeMaker version 6.9701, CPAN::Meta::Converter version 2.140640",
    "license" : [
       "perl_5"
    ],
@@ -25,12 +25,16 @@
             "ExtUtils::MakeMaker" : "0"
          }
       },
+      "configure" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "0"
+         }
+      },
       "runtime" : {
          "requires" : {
             "Carp" : "0",
             "File::Find" : "0",
             "File::Spec" : "0",
-            "IO::File" : "0",
             "perl" : "5.006",
             "strict" : "0",
             "vars" : "0",
@@ -63,9 +67,8 @@
       },
       "repository" : {
          "type" : "git",
-         "url" : "git://git.shadowcat.co.uk/p5sagit/Module-Metadata.git",
-         "web" : "http://git.shadowcat.co.uk/gitweb/gitweb.cgi?p=p5sagit/Module-Metadata.git"
+         "web" : "https://github.com/Perl-Toolchain-Gang/Module-Metadata"
       }
    },
-   "version" : "1.000019"
+   "version" : "1.000020"
 }

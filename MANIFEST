@@ -13,9 +13,7 @@ t/lib/0_2/Foo.pm
 t/lib/BOMTest/UTF16BE.pm
 t/lib/BOMTest/UTF16LE.pm
 t/lib/BOMTest/UTF8.pm
-t/lib/DistGen.pm
 t/lib/ENDPOD.pm
-t/lib/MBTest.pm
 t/lib/Tie/CPHash.pm
 t/metadata.t
 t/taint.t

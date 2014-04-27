@@ -144,7 +144,7 @@ USAGE
   Object methods
     "name()"
         Returns the name of the package represented by this module. If there
-        are more than one packages, it makes a best guess based on the
+        is more than one package, it makes a best guess based on the
         filename. If it's a script (i.e. not a *.pm) the package name is
         'main'.
 
@@ -173,6 +173,13 @@ USAGE
 
     "pod($section)"
         Returns the POD data in the given section.
+
+    "is_indexable($package)" or "is_indexable()"
+        Returns a boolean indicating whether the package (if provided) or
+        any package (otherwise) is eligible for indexing by PAUSE, the Perl
+        Authors Upload Server. Note This only checks for valid "package"
+        declarations, and does not take any ownership information into
+        account.
 
 AUTHOR
     Original code from Module::Build::ModuleInfo by Ken Williams
