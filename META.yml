@@ -4,6 +4,7 @@ author:
   - 'Ken Williams <kwilliams@cpan.org>, Randy W. Sims <RandyS@ThePierianSpring.org>'
 build_requires:
   Cwd: '0'
+  Data::Dumper: '0'
   File::Basename: '0'
   File::Path: '0'
   File::Temp: '0'
@@ -36,4 +37,4 @@ resources:
   bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=Module-Metadata
   homepage: https://metacpan.org/pod/Module::Metadata
   repository: https://github.com/Perl-Toolchain-Gang/Module-Metadata
-version: '1.000021'
+version: '1.000022'

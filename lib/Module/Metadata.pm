@@ -12,7 +12,7 @@ package Module::Metadata;
 use strict;
 use warnings;
 
-our $VERSION = '1.000021';
+our $VERSION = '1.000022';
 $VERSION = eval $VERSION;
 
 use Carp qw/croak/;
@@ -578,9 +578,17 @@ sub _parse_fh {
 
       if ( $line =~ /$PKG_REGEXP/o ) {
         $package = $1;
+        my $version = $2;
         push( @packages, $package ) unless grep( $package eq $_, @packages );
-        $vers{$package} = $2 unless exists( $vers{$package} );
-        $need_vers = defined $2 ? 0 : 1;
+        $need_vers = defined $version ? 0 : 1;
+
+        if ( not exists $vers{$package} and defined $version ){
+          # Upgrade to a version object.
+          my $dwim_version = eval { _dwim_version($version) };
+          croak "Version '$version' from $self->{filename} does not appear to be valid:\n$line\n\nThe fatal error was: $@\n"
+              unless defined $dwim_version;  # "0" is OK!
+          $vers{$package} = $dwim_version;
+        }
 
       # VERSION defined with full package spec, i.e. $Module::VERSION
       } elsif ( $version_fullname && $version_package ) {
@@ -668,12 +676,14 @@ sub _evaluate_version_line {
   (ref($vsub) eq 'CODE') or
     croak "failed to build version sub for $self->{filename}";
   my $result = eval { $vsub->() };
+  # FIXME: $eval is not the right thing to print here
   croak "Could not get version from $self->{filename} by executing:\n$eval\n\nThe fatal error was: $@\n"
     if $@;
 
   # Upgrade it into a version object
   my $version = eval { _dwim_version($result) };
 
+  # FIXME: $eval is not the right thing to print here
   croak "Version '$result' from $self->{filename} does not appear to be valid:\n$eval\n\nThe fatal error was: $@\n"
     unless defined $version; # "0" is OK!
 
