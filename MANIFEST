@@ -14,7 +14,6 @@ t/lib/BOMTest/UTF16BE.pm
 t/lib/BOMTest/UTF16LE.pm
 t/lib/BOMTest/UTF8.pm
 t/lib/ENDPOD.pm
-t/lib/Tie/CPHash.pm
 t/metadata.t
 t/taint.t
 t/version.t

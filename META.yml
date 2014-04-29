@@ -3,19 +3,13 @@ abstract: 'Gather package and POD information from perl module files'
 author:
   - 'Ken Williams <kwilliams@cpan.org>, Randy W. Sims <RandyS@ThePierianSpring.org>'
 build_requires:
-  Carp: '0'
-  Config: '0'
   Cwd: '0'
-  Data::Dumper: '0'
-  Exporter: '0'
-  ExtUtils::MakeMaker: '0'
   File::Basename: '0'
-  File::Find: '0'
   File::Path: '0'
-  File::Spec: '0'
   File::Temp: '0'
   IO::File: '0'
-  Test::More: '0'
+  Test::More: '0.82'
+  vars: '0'
 configure_requires:
   ExtUtils::MakeMaker: '0'
 dynamic_config: 1
@@ -35,10 +29,11 @@ requires:
   File::Spec: '0'
   perl: '5.006'
   strict: '0'
-  vars: '0'
   version: '0.87'
   warnings: '0'
 resources:
+  IRC: irc://irc.perl.org/#toolchain
   bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=Module-Metadata
+  homepage: https://metacpan.org/pod/Module::Metadata
   repository: https://github.com/Perl-Toolchain-Gang/Module-Metadata
-version: '1.000020'
+version: '1.000021'
