@@ -84,7 +84,7 @@
             "File::Temp" : "0",
             "IO::File" : "0",
             "List::Util" : "0",
-            "Test::More" : "0",
+            "Test::More" : "0.82",
             "lib" : "0"
          }
       }
@@ -92,7 +92,7 @@
    "provides" : {
       "Module::Metadata" : {
          "file" : "lib/Module/Metadata.pm",
-         "version" : "1.000023"
+         "version" : "1.000024"
       }
    },
    "release_status" : "stable",
@@ -110,7 +110,7 @@
       "x_IRC" : "irc://irc.perl.org/#toolchain",
       "x_MailingList" : "http://lists.perl.org/list/cpan-workers.html"
    },
-   "version" : "1.000023",
+   "version" : "1.000024",
    "x_Dist_Zilla" : {
       "perl" : {
          "version" : "5.020000"
@@ -607,7 +607,7 @@
                "Dist::Zilla::Plugin::Git::Tag" : {
                   "branch" : null,
                   "signed" : 0,
-                  "tag" : "v1.000023",
+                  "tag" : "v1.000024",
                   "tag_format" : "v%v%t",
                   "tag_message" : "v%v%t",
                   "time_zone" : "local"
